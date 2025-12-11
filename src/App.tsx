@@ -1,12 +1,9 @@
-import './App.css'
-
-
 function App() {
   return (
     <>
-    <h1>Boilerplate Vite + React + TypeScript + Tailwind 4 + PostCSS</h1>
+      <h1>Fetch Api Labs</h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
