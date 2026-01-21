@@ -1,10 +1,24 @@
-# Fetch API Lab
+# FetchApiLab 🚀
 
-A simple project that groups different public APIs into categories and shows them in a clean, easy-to-read interface.
+A React + TypeScript + Tailwind project to explore public APIs dynamically.  
 
-## Features
+### Features ✨
+- 🏷 Select public APIs by category with colored badges.  
+- ✏️ Enter any public API URL manually.  
+- 📄 View formatted JSON responses.  
+- 📱 Responsive design for mobile, tablet, and desktop.  
 
-- List of API categories with colors
-- Basic information for each API
-- Clean and minimal layout
-- Small project made to practice React, TypeScript, and general frontend structure
+### Tech Stack 🛠
+- React, TypeScript, TailwindCSS  
+- React Context for global state  
+- Custom hook `useFetchApi` for fetch management  
+
+### Usage ▶️
+1. Click a category badge or enter an API URL.  
+2. Click **Fetch** to load data.  
+3. View the results in the JSON viewer.  
+
+### Contributing 🤝
+Contributions are welcome!
+
+🌐 Live demo: [https://fetchlabapi.netlify.app/](https://fetchlabapi.netlify.app/)
