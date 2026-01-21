@@ -66,4 +66,10 @@ export const apis = [
     category: "TV / Shows",
     url: "https://rickandmortyapi.com/api/character",
   },
+  {
+    id: 11,
+    name: "Studio Ghibli Films",
+    category: "Movies",
+    url: "https://ghibliapi.vercel.app/films",
+  },
 ] as const satisfies readonly Apis[];
