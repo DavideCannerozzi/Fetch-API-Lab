@@ -60,7 +60,7 @@ export default function InputApi({
           </button>
         </div>
       </div>
-      <div>{error && <p className="ml-4 text-red-600">Error: {error}</p>}</div>
+      <div>{error && <p className="mt-12 text-red-600">⚠️ {error}</p>}</div>
     </>
   );
 }

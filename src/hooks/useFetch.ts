@@ -11,6 +11,14 @@ export default function useFetchApi<T>() {
     setLoading(true);
     try {
       const res = await fetch(url);
+      if (!res.ok) {
+        throw new Error(`Request failed: ${res.status} ${res.statusText}`);
+      }
+      const contentType = res.headers.get("content-type");
+
+      if (!contentType || !contentType.includes("application/json")) {
+        throw new Error("The provided URL does not return JSON");
+      }
       const json: T = await res.json();
       setData(json);
       return json;
