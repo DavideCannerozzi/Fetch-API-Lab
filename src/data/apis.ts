@@ -16,7 +16,7 @@ export const apis = [
     id: 2,
     name: "REST Countries",
     category: "Countries",
-    url: "https://restcountries.com/v3.1/all",
+    url: "https://apihero-api.quixtools.com/api/v1/location/getCountries",
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ export const apis = [
     id: 9,
     name: "Advice Slip API",
     category: "Fun",
-    url: "https://api.adviceslip.com/advice",
+    url: " https://api.chucknorris.io/jokes/random",
   },
   {
     id: 10,

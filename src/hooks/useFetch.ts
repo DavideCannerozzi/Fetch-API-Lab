@@ -16,7 +16,11 @@ export default function useFetchApi<T>() {
       }
       const contentType = res.headers.get("content-type");
 
-      if (!contentType || !contentType.includes("application/json")) {
+      if (
+        !contentType ||
+        (!contentType.includes("application/json") &&
+          !contentType.includes("text/javascript"))
+      ) {
         throw new Error("The provided URL does not return JSON");
       }
       const json: T = await res.json();

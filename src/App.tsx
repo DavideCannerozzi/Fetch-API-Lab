@@ -16,7 +16,12 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">
-        <h1 className="text-center m-14 text-4xl">Fetch Api Labs</h1>
+        <h1 className="text-center m-6 text-4xl">Fetch Api Labs</h1>
+        <h2 className="text-center mb-12 text-orange-400">
+          <span className="text-xl mr-4">🚀</span>
+          Explore public APIs: enter any JSON API URL or pick a category from
+          the badges to see live data.
+        </h2>
         <main className="max-w-7xl mx-auto px-4">
           <BadgeList />
           <InputApi
