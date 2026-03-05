@@ -8,6 +8,10 @@ A React + TypeScript + Tailwind project to explore public APIs dynamically.
 - 📄 View formatted JSON responses.  
 - 📱 Responsive design for mobile, tablet, and desktop.  
 
+### Screenshots
+
+![Desktop](./src/assets/desktop-api-lab.png)
+
 ### Tech Stack 🛠
 - React, TypeScript, TailwindCSS  
 - React Context for global state  
@@ -22,3 +26,7 @@ A React + TypeScript + Tailwind project to explore public APIs dynamically.
 Contributions are welcome!
 
 🌐 Live demo: [https://fetchlabapi.netlify.app/](https://fetchlabapi.netlify.app/)
+
+## License
+
+MIT — [Davide Cannerozzi](https://www.linkedin.com/in/davide-cannerozzi-developer/)
