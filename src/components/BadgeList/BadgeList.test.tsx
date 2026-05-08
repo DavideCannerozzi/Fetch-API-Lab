@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { fireEvent, render, screen } from "@testing-library/react";
 import BadgeList from "./BadgeList";
-import { categories } from "../data/data";
+import { categories } from "../../data/data";
 
 const mockFunction = vi.fn();
 vi.mock("../hooks/useApiContext", () => ({

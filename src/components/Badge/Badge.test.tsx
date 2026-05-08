@@ -1,4 +1,4 @@
-import Badge from "./Badge";
+import Badge from "./Badge/Badge";
 import { describe, expect, it, vi } from "vitest";
 import { fireEvent, render, screen } from "@testing-library/react";
 

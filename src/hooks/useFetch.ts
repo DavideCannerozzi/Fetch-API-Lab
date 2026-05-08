@@ -9,6 +9,7 @@ export default function useFetchApi<T>() {
     if (!url) return null;
     setError(null);
     setLoading(true);
+
     try {
       const res = await fetch(url);
       if (!res.ok) {

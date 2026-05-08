@@ -1,6 +1,6 @@
-import { categories } from "../data/data";
-import Badge from "./Badge";
-import { useApiContext } from "../hooks/useApiContext";
+import { categories } from "../../data/data";
+import Badge from "../Badge/Badge";
+import { useApiContext } from "../../hooks/useApiContext";
 
 export default function BadgeList() {
   const { handleClick } = useApiContext();

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import BadgeList from "./components/BadgeList";
-import InputApi from "./components/InputApi";
-import ApiViewer from "./components/ApiViewer";
+import BadgeList from "./components/BadgeList/BadgeList";
+import InputApi from "./components/InputApi/InputApi";
+import ApiViewer from "./components/ApiViewer/ApiViewer";
 import useFetchApi from "./hooks/useFetch";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 interface ApiResponse {
   [key: string]: unknown;
