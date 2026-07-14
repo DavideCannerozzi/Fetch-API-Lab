@@ -4,7 +4,7 @@ export default function Footer() {
       <p>
         🚀 Project created by{" "}
         <a
-          className="underline font-bold text-orange-600 hover:text-orange-800"
+          className="underline font-bold text-orange-700 hover:text-orange-800"
           href="https://cannerozzidavide.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"

@@ -58,7 +58,7 @@ export const apis = [
     id: 9,
     name: "Advice Slip API",
     category: "Fun",
-    url: " https://api.chucknorris.io/jokes/random",
+    url: "https://api.chucknorris.io/jokes/random",
   },
   {
     id: 10,
