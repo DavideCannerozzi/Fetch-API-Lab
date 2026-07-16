@@ -6,7 +6,7 @@ const mockSetData = vi.fn();
 const mockFetchApi = vi.fn();
 const mockSetSelectedUrl = vi.fn();
 
-vi.mock("../hooks/useApiContext", () => ({
+vi.mock("../../hooks/useApiContext", () => ({
   useApiContext: () => ({
     selectedUrl: "https://fake-api.com",
     setSelectedUrl: mockSetSelectedUrl,

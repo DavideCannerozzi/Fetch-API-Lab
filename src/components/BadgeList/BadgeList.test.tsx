@@ -4,7 +4,7 @@ import BadgeList from "./BadgeList";
 import { categories } from "../../data/data";
 
 const mockFunction = vi.fn();
-vi.mock("../hooks/useApiContext", () => ({
+vi.mock("../../hooks/useApiContext", () => ({
   useApiContext: () => ({ handleClick: mockFunction }),
 }));
 
