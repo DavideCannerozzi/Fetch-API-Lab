@@ -59,6 +59,7 @@ export default function InputApi({
           {copied && <p className="text-center">Copied!</p>}
           <button
             onClick={copyUrl}
+            aria-label="copy-url"
             className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"
           >
             📋

@@ -1,6 +1,7 @@
 import { fireEvent, screen, render, waitFor } from "@testing-library/react";
 import { describe, expect, it, vi, beforeEach } from "vitest";
 import InputApi from "./InputApi";
+import userEvent from "@testing-library/user-event";
 
 const mockSetData = vi.fn();
 const mockFetchApi = vi.fn();
@@ -49,5 +50,17 @@ describe("Test InputApi component", () => {
     await waitFor(() => {
       expect(mockSetData).toHaveBeenCalledWith({ test: "data" });
     });
+  });
+  it("should copy the url inside the input", async () => {
+    const user = userEvent.setup();
+    render(
+      <InputApi
+        setData={mockSetData}
+        fetchApi={mockFetchApi}
+        loading={false}
+        error={null}
+      />,
+    );
+   await user.click(screen.getByLabelText('copy-url'))
   });
 });
