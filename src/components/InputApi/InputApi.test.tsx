@@ -6,6 +6,7 @@ import userEvent from "@testing-library/user-event";
 const mockSetData = vi.fn();
 const mockFetchApi = vi.fn();
 const mockSetSelectedUrl = vi.fn();
+const mockSetError = vi.fn();
 
 vi.mock("../../hooks/useApiContext", () => ({
   useApiContext: () => ({
@@ -26,6 +27,7 @@ describe("Test InputApi component", () => {
         fetchApi={mockFetchApi}
         loading={false}
         error={null}
+        setError={mockSetError}
       />,
     );
     const input = screen.getByPlaceholderText(
@@ -42,6 +44,7 @@ describe("Test InputApi component", () => {
         fetchApi={mockFetchApi}
         loading={false}
         error={null}
+        setError={mockSetError}
       />,
     );
     const fetchButton = screen.getByText("Fetch");
@@ -59,8 +62,9 @@ describe("Test InputApi component", () => {
         fetchApi={mockFetchApi}
         loading={false}
         error={null}
+        setError={mockSetError}
       />,
     );
-   await user.click(screen.getByLabelText('copy-url'))
+    await user.click(screen.getByLabelText("copy-url"));
   });
 });

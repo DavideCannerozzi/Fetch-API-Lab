@@ -36,19 +36,12 @@ export default function useFetchApi<T>() {
       setLoading(false);
     }
   };
-
-  const clear = () => {
-    setData(null);
-    setError(null);
-    setLoading(false);
-  };
-
   return {
     data,
     error,
     loading,
     fetchApi,
-    clear,
+    setError,
     setData: setData as React.Dispatch<React.SetStateAction<T | null>>,
   };
 }

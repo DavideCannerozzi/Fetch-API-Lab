@@ -10,6 +10,7 @@ interface InputApiProps {
   fetchApi: (url: string) => Promise<ApiResponse | null>;
   loading: boolean;
   error: string | null;
+  setError: (error: string | null) => void;
 }
 
 export default function InputApi({
@@ -17,6 +18,7 @@ export default function InputApi({
   fetchApi,
   loading,
   error,
+  setError,
 }: InputApiProps) {
   const { selectedUrl, setSelectedUrl } = useApiContext();
   const [copied, setCopied] = useState(false);
@@ -30,6 +32,7 @@ export default function InputApi({
   const clearInput = () => {
     setSelectedUrl("");
     setData(null);
+    setError(null);
   };
 
   const copyUrl = async () => {

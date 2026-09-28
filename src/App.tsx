@@ -11,7 +11,7 @@ interface ApiResponse {
 
 function App() {
   const [data, setData] = useState<ApiResponse | null>(null);
-  const { fetchApi, loading, error } = useFetchApi<ApiResponse>();
+  const { fetchApi, loading, error, setError } = useFetchApi<ApiResponse>();
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -31,6 +31,7 @@ function App() {
             fetchApi={fetchApi}
             loading={loading}
             error={error}
+            setError={setError}
           />
           <ApiViewer data={data} loading={loading} />
         </main>
