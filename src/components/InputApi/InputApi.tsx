@@ -11,6 +11,7 @@ interface InputApiProps {
   loading: boolean;
   error: string | null;
   setError: (error: string | null) => void;
+  controller: React.RefObject<AbortController>;
 }
 
 export default function InputApi({
@@ -19,6 +20,7 @@ export default function InputApi({
   loading,
   error,
   setError,
+  controller,
 }: InputApiProps) {
   const { selectedUrl, setSelectedUrl } = useApiContext();
   const [copied, setCopied] = useState(false);
@@ -33,6 +35,7 @@ export default function InputApi({
     setSelectedUrl("");
     setData(null);
     setError(null);
+    controller?.current.abort();
   };
 
   const copyUrl = async () => {

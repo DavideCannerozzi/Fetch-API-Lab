@@ -28,6 +28,7 @@ describe("Test InputApi component", () => {
         loading={false}
         error={null}
         setError={mockSetError}
+        controller={{ current: new AbortController() }}
       />,
     );
     const input = screen.getByPlaceholderText(
@@ -45,6 +46,7 @@ describe("Test InputApi component", () => {
         loading={false}
         error={null}
         setError={mockSetError}
+        controller={{ current: new AbortController() }}
       />,
     );
     const fetchButton = screen.getByText("Fetch");
@@ -63,6 +65,7 @@ describe("Test InputApi component", () => {
         loading={false}
         error={null}
         setError={mockSetError}
+        controller={{ current: new AbortController() }}
       />,
     );
     await user.click(screen.getByLabelText("copy-url"));
